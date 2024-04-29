@@ -77,10 +77,48 @@ const AdobeDesign = () => {
           </button>
         </form>
       </div>
+      {/* Map */}
       <div className="flex justify-center items-center  my-[65px] w-[1320px]  m-auto p-4">
         <div className="w-full flex flex-col mrl-2">
           <label className="text-lg font-medium text-indigo-900">تجدنا</label>
           <img src={mapLogo} width={1320} height={80} alt="map"></img>
+        </div>
+      </div>
+      {/* Contact */}
+      <div className="bg-green-600 rounded-md my-[65px] w-[1320px]  m-auto p-4 text-white">
+        <div className="flex justify-between py-8">
+          <p className="p-2">هاتف</p>
+          <p className="p-2"> +966 11 111 1111</p>
+        </div>
+        <hr />
+        <div className="flex justify-between py-8">
+          <p className="p-2">عنوان</p>
+          <p className="p-2">
+            {" "}
+            B4، مجمع غرناطة للأعمال، الشهداء، الرياض، 13241 المملكة العربية
+            السعودية
+          </p>
+        </div>
+        <hr />
+        <div className="flex justify-between py-8">
+          <p className="p-2">بريد إلكتروني</p>
+          <p className="p-2"> info@geatakamol.com</p>
+        </div>
+        <hr />
+        <div className="flex justify-between py-8">
+          <p className="p-2">info@geatakamol.com</p>
+          <p className="p-2"> links</p>
+        </div>
+      </div>
+      {/* Footer */}
+      <div className="w-full flex justify-between p-8 text-white bg-gray-900">
+        <p>Foooter Content 1</p>
+        <div className="flex justify-between ">
+          <p className="mx-4"> اتصل بنا</p>
+          <p className="mx-4"> اتصل بنا</p>
+        </div>
+        <div className="flex justify-between align-bottom">
+          <p className="mx-4 pt-2">Footer Content2</p>
         </div>
       </div>
     </div>
