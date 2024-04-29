@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, TextField, FormControl } from "@mui/material";
-import useAuthStore from "../store"; // Assuming same authentication store
+import useAuthStore from "../store";
+import axios from "axios";
 
 const Login = () => {
   const { setIsAuthenticated } = useAuthStore(); // Assuming same method to set authentication
@@ -9,6 +10,8 @@ const Login = () => {
     // Implement your login logic here (e.g., API call)
     console.log("Login submitted:", values);
     setIsAuthenticated(true); // Simulate successful login (replace with actual logic)
+    const res = axios.post("http://localhost:8080/users", values);
+    console.log("response ", res);
   };
 
   return (
